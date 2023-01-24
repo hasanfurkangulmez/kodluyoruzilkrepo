@@ -40,7 +40,7 @@ namespace CSharp101
             }
             for (; ; )
             {
-                if(i)
+                
             }
         }
     }
