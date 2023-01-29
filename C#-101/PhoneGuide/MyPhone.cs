@@ -10,17 +10,14 @@ namespace PhoneGuide
 {
     public class MyPhone : IGuideOperation
     {
-        private static List<Person> Persons = new List<Person>();
+        private List<Person> Persons = new List<Person>(){
+            new Person("Sabit", "Numara", 1),
+            new Person("Acil", "Servis", 112),
+            new Person("Polis", "İmdat", 155),
+            new Person("İtfaiye", "İmdat", 110),
+            new Person("Jandarma", "İmdat", 156)
+        };
         private Person PersonInfo;
-
-        static MyPhone()
-        {
-            Persons.Add(new Person("Sabit", "Numara", 1));
-            Persons.Add(new Person("Acil", "Servis", 112));
-            Persons.Add(new Person("Polis", "İmdat", 155));
-            Persons.Add(new Person("İtfaiye", "İmdat", 110));
-            Persons.Add(new Person("Jandarma", "İmdat", 156));
-        }
 
         public MyPhone()
         {
